@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">ZeroNights</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_speaker_info">SpeakerInfo</string>
+    <string name="title_activity_talk">TalkActivity</string>
+    <string name="title_activity_talk_info">TalkInfo</string>
+    <string name="title_activity_talk_list">TalkListActivity</string>
+    <string name="title_activity_speaker_list">SpeakerListActivity</string>
+    <string name="title_activity_program">Program</string>
+    <string name="title_activity_tools">ToolsActivity</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<TabHost android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#152537"
+        android:src="@drawable/matreshka" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5dp" 
+       >
+
+        <LinearLayout
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startDay1"
+                android:text="Day 1"
+                 android:background="@drawable/btn_blue"
+              style = "@style/ButtonText" />
+            
+              <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startDay2"
+                android:text="Day 2"
+                 android:background="@drawable/btn_blue"
+              style = "@style/ButtonText" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startSpeakerList"
+                android:text="Speakers"
+                 android:background="@drawable/btn_blue"
+              style = "@style/ButtonText" />
+
+    
+        
+    </LinearLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <!--  <android.support.v4.view.ViewPager
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:id="@+id/awesomepager"/>  
+            -->
+            <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        android:text="@string/hello_world" 
+        android:textColor="@color/text_color"
+         android:listSelector="@android:color/transparent"
+         android:cacheColorHint="@android:color/transparent">
+    </ListView> 
+        </FrameLayout>
+            
+
+        
+    </LinearLayout>
+        
+</TabHost>

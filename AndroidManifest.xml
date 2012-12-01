@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.zeronights.app"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+ 
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+   		android:debuggable="false"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name=".Program"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpeakerInfo"
+            android:label="@string/title_activity_speaker_info" >
+        </activity>
+        <activity
+            android:name=".TalkActivity"
+            android:label="@string/title_activity_talk" >
+        </activity>
+        <activity
+            android:name=".TalkInfo"
+            android:label="@string/title_activity_talk_info" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ru.zeronights.app.TalkActivity" />
+        </activity>
+        <activity
+            android:name=".TalkListActivity"
+            android:label="@string/title_activity_talk_list" >
+        </activity>
+        <activity
+            android:name=".TalkInfoActivity"
+            android:label="@string/title_activity_talk_info" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ru.zeronights.app.TalkListActivity" />
+        </activity>
+        <activity
+            android:name=".SpeakerListActivity"
+            android:label="@string/title_activity_speaker_list" >
+
+        </activity>
+   
+    
+        
+        
+    </application>
+
+</manifest>

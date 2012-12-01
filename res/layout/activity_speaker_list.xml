@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+     android:background = "#152537" 
+     >
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#152537"
+        android:src="@drawable/matreshka" />
+   
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+          <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startDay1"
+                android:text="Day 1"
+                 android:background="@drawable/btn_blue"
+              style = "@style/ButtonText" />
+            
+              <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startDay2"
+                android:text="Day 2"
+                 android:background="@drawable/btn_blue"
+              style = "@style/ButtonText" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startSpeakerList"
+            android:text="Speakers" 
+             android:background="@drawable/btn_blue"
+              style = "@style/ButtonText" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="@color/text_color" 
+         android:listSelector="@android:color/transparent"
+         android:cacheColorHint="@android:color/transparent"
+         android:layout_marginTop="50dp"  >
+    </ListView>
+
+    <!--   <ImageView
+        android:id="@+id/Matreshka"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#152537"
+        android:src="@drawable/matreshka" />
+-->
+</RelativeLayout>
